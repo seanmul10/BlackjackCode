@@ -15,7 +15,7 @@ class cHumanPlayer : public cPlayer
 private:
 	int chips; // The amount of chips the player currently has.
 public:
-	cHumanPlayer(const std::string& name);   // Constructor - will create an instance of the cHumanPlayer class.
+	cHumanPlayer(const std::string& name = "Player");   // Constructor - will create an instance of the cHumanPlayer class.
 	int pPlay(cHumanPlayer player, int stake);  // Indicates if the player wants to take another card.
 	short getChipCount(); // Returns the players current amount of chips.
 	void setChipCount(int dChipAmount); // Sets 

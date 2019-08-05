@@ -21,5 +21,9 @@ public:
 	void showCard();     // Dsiplay on screen the card details for the Card instance.
 	short getCardValue();    // Returns the value of the current card.
 	void setFaceUp();		// change the value of the card true/false
+	string getSuit();		// return card suit
+	string getType();		// return card type
+	LPCSTR getImage();		// return the filename of the associated card image.
+	LPCSTR getCardName();  // return the card name of the associated card image.
 };
 #endif

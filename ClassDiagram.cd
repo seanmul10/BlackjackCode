@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="cCard" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAABAAAAAFBAAAQACQAAAAAEAAAAACAAAAA=</HashCode>
+      <FileName>cCard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cDealer" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>cDealer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cGame" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEAgAAAAQAAAQAQAEgBAAYAAAAAIQAAAACAAAQAAA=</HashCode>
+      <FileName>cGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cHand" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACIAAAAAAIAAAAAAggAAAAAAgCAEAAAAAAgAAAAECA=</HashCode>
+      <FileName>cHand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cHumanPlayer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAABKAAAAAA=</HashCode>
+      <FileName>cHumanPlayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cPack" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAABAIAAAQ=</HashCode>
+      <FileName>cPack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cPlayer" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEQKAAAABAAgAABEAAAAAAgCAACAAJCAAAAIAgAA=</HashCode>
+      <FileName>cPlayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSDL2WNDManager" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAIAEAAAEAAIAABABAAAQACAACAAAAAAI=</HashCode>
+      <FileName>cSDL2WNDManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSprite" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAgAAABAEAACgAAACAAAgAAAIEAAQEAA=</HashCode>
+      <FileName>cSprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTexture" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABIAAAhAAAAAkAAIEAAACAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>cTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTextureMgr" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAgAAAhAAIAAAAAAAAQQIAAACAAAEAAA=</HashCode>
+      <FileName>cTextureMgr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CARD" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABAAAAAAAAAAggAAAAAAAAAAAAAQAABAAA=</HashCode>
+      <FileName>GameConstants.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ESuit" Collapsed="true">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>GameConstants.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EType" Collapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAQYAAAAAQAAQAoIAAAAAAAAAACAAABQQAAAAAAAA=</HashCode>
+      <FileName>GameConstants.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

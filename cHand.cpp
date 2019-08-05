@@ -14,7 +14,6 @@ cHand.cpp
 
 cHand::cHand()   // Constructor - will create an instance of the card class.
 {
-	cHand::handSize = 0;
 	cHand::aHand.reserve(7);     // defines an array a temporary array of cards
 }
 /*
@@ -84,16 +83,6 @@ short cHand::gethandValue()       // Get a card from the top of the pack
 	
 	return total;
 }
-
-/*
-=================
-- Returns the current size of the hand based on the number of cards held
-=================
-*/
-short cHand::getHandSize() {
-	return (cHand::handSize);
-}
-
 /*
 =================
 - Displays all the cards in the current hand.
@@ -130,4 +119,31 @@ void cHand::flipCard() 		// flip card face up down.
 bool cHand::handIsEmpty() 			// Determine if there are any cards in the  hand
 {
 	return cHand::aHand.empty();
+}
+/*
+=================
+- return the number of cards in the vector
+=================
+*/
+int cHand::getNumberofCards()		// return the number of cards in the vector
+{
+	return cHand::aHand.size();
+}
+/*
+=================
+- return a card from the hand
+=================
+*/
+cCard* cHand::getCardFromHand(int pos)		// return the number of cards in the vector
+{
+	return aHand[pos];
+}
+
+/*
+=================
+- Returns the current size of the hand based on the number of cards held
+=================
+*/
+short cHand::getHandSize() {
+	return (cHand::handSize);
 }

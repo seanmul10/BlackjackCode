@@ -25,12 +25,3 @@ bool cDealer::pIsTwisting()     // Returns whether the player wants to "Twist".
 	return (cPlayer::getPlayerHandValue() <= 16);
 }
 
-/*
-=================
-- Displays that the player has bust.
-=================
-*/
-//void cPlayer::msgPlayerBust()       // Displays that the player has bust.
-//{
-//	std::cout << cPlayer::playerName << " is bust!\n";
-//}

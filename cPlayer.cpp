@@ -27,16 +27,6 @@ bool cPlayer::pIsBust()     // Returns whether the players hand is over 21 there
 }
 
 /*
-================ =
--Check if player has a natural blackjack
-================ =
-*/
-bool cPlayer::pHasNatural()     // Returns whether the players hand is over 21 therefore "bust".
-{
-	return (playerHand.gethandValue() == 21 && playerHand.getHandSize() == 2);
-}
-
-/*
 =================
 - Displays that the player has bust.
 =================
@@ -63,17 +53,6 @@ short cPlayer::getPlayerHandValue()  // Return the total value of the players ha
 {
 	return cPlayer::playerHand.gethandValue();
 }
-
-/*
-=================
-- Returns the players hand size
-=================
-*/
-short cPlayer::getPlayerHandSize()  // Return the total value of the players hand
-{
-	return cPlayer::playerHand.getHandSize();
-}
-
 /*
 =================
 - Adds a card to the players hand.
@@ -122,6 +101,44 @@ void cPlayer::flipFirstCard()        // Flip the first card
 void cPlayer::msgPlayerWins()       // Displays that the player has bust.
 {
 	std::cout << cPlayer::playerName << " you've Won!\n";
+}
+/*
+=================
+- return the number of cards in the vector.
+=================
+*/
+int cPlayer::getNumberofCards()		// return the number of cards in the vector
+{
+	return cPlayer::playerHand.getNumberofCards();
+}
+/*
+=================
+- return the a card from the players hand.
+=================
+*/
+cCard* cPlayer::getPlayerCard(int pos)
+{
+	return playerHand.getCardFromHand(pos);
+}
+
+/*
+================ =
+-Check if player has a natural blackjack
+================ =
+*/
+bool cPlayer::pHasNatural()     // Returns whether the players hand is over 21 therefore "bust".
+{
+	return (playerHand.gethandValue() == 21 && playerHand.getHandSize() == 2);
+}
+
+/*
+=================
+- Returns the players hand size
+=================
+*/
+short cPlayer::getPlayerHandSize()  // Return the total value of the players hand
+{
+	return cPlayer::playerHand.getHandSize();
 }
 
 /*

@@ -43,7 +43,7 @@ private:
 	cPack thePack;
 	cCard* theCard = NULL;
 	
-	bool sStick = false;
+	int iPlay = -1;
 	bool bGameOver = false;
 
 };

@@ -20,9 +20,11 @@ public:
 	void addCard(cCard* aCard);      // Adds a card to the current hand.
 	void clearHand();     // Clear all the cards from the hand.
 	short gethandValue();    // Returns the value of the current hand.
-	short getHandSize();	// Returns the amount of drawn cards in the current hand.
 	void showHand();		// Display cards in hand;
 	void flipCard();		// flip card face up down.
 	bool handIsEmpty();			// Determine if there are any cards in the hand
+	int getNumberofCards();		// return the number of cards in the vector
+	cCard* getCardFromHand(int pos);     // return a card from the hand
+	short getHandSize();	// Returns the amount of drawn cards in the current hand.
 };
 #endif

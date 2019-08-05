@@ -37,10 +37,11 @@ cHumanPlayer::cHumanPlayer(const std::string& name): cPlayer(name) // Constructo
 		std::cout << "\nStarting again with the default number of chips." << std::endl;
 		cHumanPlayer::chips = 5000;
 	}
-	
+
 	// Close the file
 	file.close();
 }
+
 /*
 =================
 - Check if player wants to hit, stand or double down.
@@ -95,7 +96,7 @@ short cHumanPlayer::getChipCount()
 - Adds or removes chips from the player
 =================
 */
-void cHumanPlayer::setChipCount(int dChipAmount)	
+void cHumanPlayer::setChipCount(int dChipAmount)
 {
 	// Writes the players chips to a text file
 	cHumanPlayer::chips += dChipAmount;
@@ -113,5 +114,3 @@ void cHumanPlayer::setChipCount(int dChipAmount)
 	// Close the file
 	file.close();
 }
-
-

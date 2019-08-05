@@ -14,7 +14,7 @@
 
 using namespace std;
 
-string windowTitle = "BlackJack SDL - Rework of console app!";
+string windowTitle = "Blackjack!";
 
 //This is the SDL window
 static cSDL2WNDManager* pgmWNDMgr = cSDL2WNDManager::getInstance();

@@ -18,6 +18,8 @@ cCard::cCard()
 	aCard.cType = EType::ace;
 	aCard.cValue = (int)EType::ace;
 	aCard.cIsFaceUp = true;
+	aCard.cFilename = "";
+	aCard.cCardName = "";
 }
 
 cCard::cCard(ESuit ccSuit, EType ccType, bool ccIsFaceUp)   // Constructor - will create an instance of the card class.
@@ -27,6 +29,8 @@ cCard::cCard(ESuit ccSuit, EType ccType, bool ccIsFaceUp)   // Constructor - wil
 	aCard.cValue = (int)ccType;
 	aCard.cValue = cCard::getCardValue();
 	aCard.cIsFaceUp = ccIsFaceUp;
+	aCard.cFilename = "Cards/" + (string)strSuit[(int)ccSuit] + (string)strType[(int)ccType] + ".png";
+	aCard.cCardName = (string)strSuit[(int)aCard.cSuit] + (string)strType[(int)aCard.cType];
 }
 /*
 =================
@@ -48,7 +52,7 @@ void cCard::showCard()     // Dsiplay on screen the card details for the Card in
 	CARD sCard = cCard::getCard();
 	if ( sCard.cIsFaceUp )
 	{
-		std::cout << strType[(short)sCard.cType] << strSuit[(short)sCard.cSuit];
+		std::cout << strType[(int)sCard.cType] << strSuit[(int)sCard.cSuit];
 	}
 	else
 	{
@@ -84,4 +88,42 @@ short cCard::getCardValue()
 void cCard::setFaceUp()		// change the value of the card true/false
 {
 	aCard.cIsFaceUp = !(aCard.cIsFaceUp);
+}
+
+/*
+=================
+- Returns the current Card suit for the Card instance.
+=================
+*/
+string cCard::getSuit()		// return card suit
+{
+	return strSuit[(int)aCard.cSuit];
+}
+/*
+=================
+- Returns the current Card type for the Card instance.
+=================
+*/
+string cCard::getType()		// return card type
+{
+	return strType[(int)aCard.cType];
+}
+/*
+=================
+- return the filename of the associated card image.
+=================
+*/
+LPCSTR cCard::getImage() 		// return the filename of the associated card image.
+{
+	return aCard.cFilename.c_str();
+}
+
+/*
+=================
+- return the card name of the associated card image.
+=================
+*/
+LPCSTR cCard::getCardName() 		// return the card name of the associated card image.
+{
+	return aCard.cCardName.c_str();
 }

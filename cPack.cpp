@@ -5,7 +5,6 @@ cPack.cpp
 =================
 */
 #include "cPack.h"
-using namespace std;
 /*
 =================
 - Data constructor initializes the Pack 
@@ -28,14 +27,13 @@ cPack::cPack()   // Constructor - will create an instance of the card class.
 
 void cPack::createPack()        // Returns the current card details for the Card instance.
 {
-	for(ESuit theSuit = ESuit::clubs; theSuit <= ESuit::spades; ++theSuit)
+	for (ESuit theSuit = ESuit::clubs; theSuit <= ESuit::spades; ++theSuit)
 	{
-		for(EType theCard = EType::ace; theCard <= EType::king; ++theCard)
+		for (EType theCard = EType::ace; theCard <= EType::king; ++theCard)
 		{
-			cPack::mPack.push_back(new cCard(static_cast<ESuit>(theSuit),static_cast<EType>(theCard),true));
+			cPack::mPack.push_back(new cCard(static_cast<ESuit>(theSuit), static_cast<EType>(theCard), true));
 		}
 	}
-
 }
 /*
 =================
@@ -45,9 +43,9 @@ void cPack::createPack()        // Returns the current card details for the Card
 void cPack::shufflePack()     // Dsiplay on screen the card details for the Card instance.
 {
 	/* Let the computer pick a random number */
-    // obtain a time-based seed:
+	// obtain a time-based seed:
 	auto seed = chrono::system_clock::now().time_since_epoch().count();
-	shuffle(cPack::mPack.begin(),cPack::mPack.end(), default_random_engine((unsigned)seed));
+	shuffle(cPack::mPack.begin(), cPack::mPack.end(), default_random_engine((unsigned)seed));
 }
 
 /*
